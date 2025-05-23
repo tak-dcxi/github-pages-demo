@@ -236,8 +236,10 @@
       } from "https://unpkg.com/invokers-polyfill@latest/invoker.js";
       if (!isSupported()) apply();
     </script>
-    <!-- Load the polyfill -->
-    <script src="./index.js" type="module"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/dialog-closedby-polyfill/index.js"
+    ></script>
     <script type="module">
       // Import the functions from the polyfill
       import { isSupported } from "./index.js";
